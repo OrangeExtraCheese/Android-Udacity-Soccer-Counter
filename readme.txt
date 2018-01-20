@@ -1,0 +1,1 @@
+This app was written for Nexus 5X size like device

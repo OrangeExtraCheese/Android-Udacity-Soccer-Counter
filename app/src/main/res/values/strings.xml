@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Soccer Counter</string>
+    <string name="visiting_team">Visiting Team</string>
+    <string name="home_team">Home Team</string>
+    <string name="increase">goal!</string>
+    <string name="reset">reset</string>
+    <string name="decrease">mistake...</string>
+    <string name="type_team">Type team name here</string>
+</resources>

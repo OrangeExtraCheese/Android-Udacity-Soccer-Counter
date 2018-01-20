@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/grass"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/kreda_poz"
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="43"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:text="@string/visiting_team"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:textSize="25sp"
+                android:textColor="@color/red_semi_strong"
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                >
+                <ImageView
+                    android:id="@+id/ball"
+                    android:src="@drawable/ball"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/team_a_counter"
+                    android:text="0"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/red_strong"
+                    android:textSize="75sp"
+
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+            <EditText
+                android:hint="@string/type_team"
+                android:id="@+id/edit_text1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/kreda"
+
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="43"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:text="@string/home_team"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:textSize="25sp"
+                android:textColor="@color/blue_semi_strong"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+
+
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                >
+                <ImageView
+                    android:src="@drawable/ball"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/team_b_counter"
+                    android:text="0"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/blue_strong"
+                    android:textSize="75sp"
+
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+            <EditText
+                android:hint="@string/type_team"
+                android:id="@+id/edit_text2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/kreda_poz"
+
+        android:src="@drawable/kreda_poz"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_above="@+id/switch_team"
+        />
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_team"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/SwitchCompatTheme"
+
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/gol"
+        />
+    <Button
+        android:id="@+id/gol"
+        android:text="@string/increase"
+        android:onClick="increaseScore"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/button_kreda"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/undo"
+        android:onClick="decreaseScore"
+        android:text="@string/decrease"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:background="@drawable/button_kreda"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/reset"
+        android:text="@string/reset"
+        android:onClick="resetScore"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/button_kreda"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
