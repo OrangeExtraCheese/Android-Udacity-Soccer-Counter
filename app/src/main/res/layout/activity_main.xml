@@ -79,7 +79,7 @@
                     />
             </LinearLayout>
             <ImageView
-                android:src="@drawable/kreda"
+                android:src="@drawable/chalk"
 
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
@@ -153,7 +153,7 @@
 <ImageView
     android:id="@+id/kreda_poz"
 
-    android:src="@drawable/kreda_poz"
+    android:src="@drawable/chalk_horizotal"
     android:adjustViewBounds="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
         android:layout_above="@id/undo"
         android:layout_centerHorizontal="true"
 
-        android:background="@drawable/button_kreda"
+        android:background="@drawable/chalk_button"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         />
@@ -200,7 +200,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
 
-        android:background="@drawable/button_kreda"
+        android:background="@drawable/chalk_button"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         />
@@ -217,7 +217,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
 
-        android:background="@drawable/button_kreda"
+        android:background="@drawable/chalk_button"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         />
